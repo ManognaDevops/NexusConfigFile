@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jenkinstest2</groupId>
+  <artifactId>jenkinstest2</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>jenkinstest2 Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>jenkinstest2</finalName>
+  </build>
+<repositories>
+        <repository>
+          <id>grouptest</id>
+<url>http://35.187.152.213:8081/nexus/content/groups/grouptest/</url>      
+  </repository>
+      </repositories>
+<distributionManagement>
+        <snapshotRepository>
+        <id>snaptest</id>
+<url>http://35.187.152.213:8081/nexus/content/repositories/snaptest/</url>
+</snapshotRepository>
+
+        <repository>
+        <id>releasetest</id>
+<url>http://35.187.152.213:8081/nexus/content/repositories/releasetest/</url>        
+</repository>
+</distributionManagement>
+</project>
